@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>If-Else Example</title>
+    <script>
+        function checkNumber() {
+            var inputValue = document.getElementById("numberInput").value;
+
+            if (inputValue > 10) {
+                document.getElementById("result").innerHTML = "The number is greater than 10.";
+            } else {
+                document.getElementById("result").innerHTML = "The number is 10 or less.";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Enter a number:</h2>
+    <input type="number" id="numberInput">
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+</body>
+</html>
